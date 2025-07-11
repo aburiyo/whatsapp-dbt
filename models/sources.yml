@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: whatsapp
+    schema: bronze_soccerandtinz  
+    tables:
+      - name: rawtext
+        identifier: whatsapp_raw
+  

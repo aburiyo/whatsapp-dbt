@@ -1,0 +1,25 @@
+
+# dbt build artifacts
+target/
+dbt_modules/
+dbt_packages/
+logs/
+
+# Python virtual environments
+venv/
+dbt-env/
+.env/
+
+# System files
+.DS_Store
+
+# VS Code and IDE settings
+.vscode/
+.idea/
+*.swp
+
+# Sensitive files
+profiles.yml
+secrets.yml
+.env
+
