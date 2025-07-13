@@ -1,9 +1,9 @@
-WITH dim_members AS (
+WITH MEMBERS AS (
     SELECT 
-    DISTINCT groupmember
+    DISTINCT *
     FROM {{ ref('stg_members')}}
+    WHERE POSITION = 1 OR (POSITION BETWEEN 4 AND 24)
 )
 
-SELECT *
-FROM dim_members
-
+SELECT GROUPMEMBER AS MEMBER
+FROM MEMBERS
