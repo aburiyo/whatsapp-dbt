@@ -20,7 +20,7 @@ PARSE AS (
            ELSE SENDER 
            END AS SENDER,
            MESSAGE,
-           DATETIME
+           DATETIME AS DATE_TIME
     FROM REGEX
 
 )
