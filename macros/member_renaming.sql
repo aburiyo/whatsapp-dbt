@@ -8,6 +8,8 @@
         WHEN {{ col_name }} = 'BigFoot' THEN 'Victor'
         WHEN {{ col_name }} = 'OJ 4real' THEN 'OJ'
         WHEN {{ col_name }} = 'Shine William' THEN 'Shine'
+        WHEN {{ col_name }} = 'DAN' THEN 'Dan San'
+        WHEN {{ col_name }} = 'Soccer talk & Tinz' THEN 'Soccer Talk & Tinz'
         ELSE {{ col_name }}
     END
 {% endmacro %}
