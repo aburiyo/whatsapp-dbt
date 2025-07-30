@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: dim_members
+    columns:
+
+      - name: member 
+        tests:
+          - unique
+          - not_null
