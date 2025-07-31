@@ -8,3 +8,20 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: fct_messages
+    columns:
+
+     - name: sender
+       tests:
+          - not_null
+
+     - name: state
+       tests:
+          - accepted_values:
+              values: ['Georgia']
+      
+     - name: date_time
+       tests:
+          - not_null
+        
